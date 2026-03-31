@@ -3,82 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Masala Pasta — A bold Indian-style pasta tossed in spiced tomato gravy with herbs and butter." />
-  <title>Masala Pasta — Chef's Signature Recipes</title>
+  <meta name="description" content="Masala Pasta — A spicy Indian-style pasta tossed in tomato, onion, and bold masala flavors." />
+  <title>Masala Pasta — Signature Recipes</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar">
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="navbar-inner">
       <a href="index.html" class="navbar-brand">
-        <span class="brand-title">Chef's Signature Recipes</span>
+        <span class="brand-title">Signature Recipes</span>
       </a>
-      <button class="nav-toggle" id="navToggle">
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
-      <ul class="navbar-links" id="navLinks">
+
+      <ul class="navbar-links" id="navLinks" role="list">
         <li><a href="index.html">Home</a></li>
         <li><a href="pasta.html" class="active">Pasta</a></li>
         <li><a href="biryani.html">Biryani</a></li>
         <li><a href="manchurian.html">Manchurian</a></li>
         <li><a href="butterChicken.html">Butter Chicken</a></li>
-      <li><a href="dessert.html">Dessert</a></li>
+        <li><a href="dessert.html">Dessert</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
 
-    <!-- HERO -->
-    <section class="recipe-hero">
-      <div class="recipe-hero-bg"
-        style="background-image: url('images/pasta.png');">
+    <section class="recipe-hero" aria-label="Recipe hero">
+      <div class="recipe-hero-bg" role="img" aria-label="Masala pasta in a bowl"
+        style="background-image: url('https://images.unsplash.com/photo-1525755662778-989d0524087e?w=1400&auto=format&fit=crop&q=80');">
       </div>
       <div class="recipe-hero-overlay"></div>
       <div class="recipe-hero-content">
-        <h1>Indian Style <em>Masala Pasta</em></h1>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a>
+          <span>›</span>
+          <a href="index.html#featured">Recipes</a>
+          <span>›</span>
+          <span>Masala Pasta</span>
+        </nav>
+        <h1>Masala Pasta <em>Street Style</em></h1>
         <div class="recipe-badges">
-          <span class="recipe-badge">⏱ 30 Minutes</span>
-          <span class="recipe-badge">👤 Serves 3</span>
-          <span class="recipe-badge">🌍 Indian Fusion</span>
-          <span class="recipe-badge">Easy</span>
+          <span class="recipe-badge"><strong>⏱</strong> 30 Minutes</span>
+          <span class="recipe-badge"><strong>👤</strong> Serves 3</span>
+          <span class="recipe-badge"><strong>🌍</strong> Indian Fusion</span>
+          <span class="recipe-badge difficulty-medium" style="color: var(--color-gold); border-color: var(--color-gold-dim);">Easy</span>
         </div>
       </div>
     </section>
 
-    <!-- BODY -->
     <section class="recipe-body">
       <div class="container">
         <div class="recipe-layout">
 
-          <!-- SIDEBAR -->
-          <aside class="recipe-sidebar">
+          <aside class="recipe-sidebar" aria-label="Recipe details">
 
             <div class="sidebar-card">
               <h3>Quick Info</h3>
               <div class="quick-info">
-                <div class="info-row"><span>Prep</span><span>10 min</span></div>
-                <div class="info-row"><span>Cook</span><span>20 min</span></div>
-                <div class="info-row"><span>Difficulty</span><span>Easy</span></div>
-                <div class="info-row"><span>Category</span><span>Veg</span></div>
-                <div class="info-row"><span>Serves</span><span>3</span></div>
+                <div class="info-row">
+                  <span class="info-label">Prep Time</span>
+                  <span class="info-value">10 minutes</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Cook Time</span>
+                  <span class="info-value">20 minutes</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Difficulty</span>
+                  <span class="info-value difficulty-medium">Easy</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Cuisine</span>
+                  <span class="info-value">Indian Fusion</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Category</span>
+                  <span class="info-value">Vegetarian</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-label">Serves</span>
+                  <span class="info-value">3 persons</span>
+                </div>
               </div>
             </div>
 
             <div class="sidebar-card">
               <h3>Ingredients</h3>
-              <ul class="ingredients-list">
+              <ul class="ingredients-list" aria-label="Ingredients list">
                 <li>250g pasta</li>
-                <li>2 tbsp butter</li>
+                <li>2 tbsp oil or butter</li>
                 <li>1 onion, chopped</li>
+                <li>1 capsicum, chopped</li>
                 <li>2 tomatoes, pureed</li>
-                <li>1 capsicum, sliced</li>
-                <li>1 tsp ginger-garlic paste</li>
+                <li>1 tbsp ginger-garlic paste</li>
                 <li>1 tsp red chilli powder</li>
-                <li>½ tsp turmeric</li>
                 <li>1 tsp garam masala</li>
+                <li>1 tsp turmeric</li>
                 <li>2 tbsp tomato ketchup</li>
                 <li>Salt to taste</li>
                 <li>Coriander for garnish</li>
@@ -87,55 +111,66 @@
 
           </aside>
 
-          <!-- MAIN -->
           <div class="recipe-main">
 
-            <h2>Quick Overview</h2>
+            <span class="section-label">Indian Street Favorite</span>
+            <h2>Simple, Spicy, Comforting</h2>
+
             <p class="recipe-intro">
-              A street-style Indian pasta — spicy, buttery, slightly tangy.
-              Think pasta meets masala maggi energy, but upgraded.
+              Masala pasta is a quick Indo-fusion dish with a spicy tomato base, soft vegetables, and a bold street-style taste.
+            </p>
+
+            <p class="recipe-intro">
+              It is fast, filling, and perfect for when you want something familiar with a little extra kick.
             </p>
 
             <div class="gold-rule"><span>Instructions</span></div>
+            <h2>Step-by-Step Method</h2>
 
-            <ol class="steps-list">
+            <ol class="steps-list" aria-label="Cooking steps">
 
               <li class="step-item">
+                <div class="step-number" aria-label="Step 1"></div>
                 <div class="step-content">
-                  <h4>Boil Pasta</h4>
-                  <p>Cook pasta in salted water until al dente. Drain and keep aside.</p>
+                  <h4>Boil the Pasta</h4>
+                  <p>Cook pasta in salted water until al dente. Drain and set aside.</p>
                 </div>
               </li>
 
               <li class="step-item">
+                <div class="step-number" aria-label="Step 2"></div>
                 <div class="step-content">
-                  <h4>Make Base</h4>
-                  <p>Heat butter, sauté onion till soft. Add ginger-garlic paste.</p>
+                  <h4>Make the Base</h4>
+                  <p>Heat oil or butter, then sauté onion, capsicum, and ginger-garlic paste.</p>
                 </div>
               </li>
 
               <li class="step-item">
+                <div class="step-number" aria-label="Step 3"></div>
                 <div class="step-content">
                   <h4>Add Masala</h4>
-                  <p>Add tomato puree, chilli powder, turmeric, salt. Cook till thick.</p>
+                  <p>Mix in tomato puree, chilli powder, turmeric, garam masala, salt, and ketchup.</p>
                 </div>
               </li>
 
               <li class="step-item">
+                <div class="step-number" aria-label="Step 4"></div>
                 <div class="step-content">
-                  <h4>Mix Veggies</h4>
-                  <p>Add capsicum and cook for 2–3 minutes.</p>
+                  <h4>Cook the Sauce</h4>
+                  <p>Let the masala cook until thick and well combined.</p>
                 </div>
               </li>
 
               <li class="step-item">
+                <div class="step-number" aria-label="Step 5"></div>
                 <div class="step-content">
                   <h4>Combine</h4>
-                  <p>Add pasta + ketchup + garam masala. Toss well.</p>
+                  <p>Add the pasta and toss well so everything gets coated.</p>
                 </div>
               </li>
 
               <li class="step-item">
+                <div class="step-number" aria-label="Step 6"></div>
                 <div class="step-content">
                   <h4>Serve</h4>
                   <p>Garnish with coriander and serve hot.</p>
@@ -144,64 +179,69 @@
 
             </ol>
 
-            <div class="chefs-tip">
-              <div class="tip-label">Tip</div>
-              <p>Add cheese on top if you want it creamy. Skip if you want it more street-style.</p>
+            <div class="chefs-tip" role="note" aria-label="Chef's tip">
+              <div class="tip-label">Chef's Tip</div>
+              <p>
+                Add a little extra butter at the end for a richer street-style finish.
+              </p>
+            </div>
+
+            <div style="margin-top: var(--space-md); display: flex; gap: 1rem; flex-wrap: wrap;">
+              <a href="index.html" class="btn btn-outline">← Back to All Recipes</a>
+              <a href="biryani.html" class="btn btn-gold">Next Recipe: Biryani →</a>
             </div>
 
           </div>
-
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <div class="brand-title">Signature Recipes</div>
-        <p>A bold collection of Indian and Indo-Chinese favorites — rich, vibrant, unforgettable.</p>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-title">Signature Recipes</div>
+          <p>A bold collection of Indian and Indo-Chinese favorites — rich, vibrant, unforgettable.</p>
+        </div>
+        <div class="footer-col">
+          <h4>All Recipes</h4>
+          <ul>
+            <li><a href="pasta.html">Masala Pasta</a></li>
+            <li><a href="biryani.html">Royal Awadhi Biryani</a></li>
+            <li><a href="manchurian.html">Manchurian</a></li>
+            <li><a href="butterChicken.html">Butter Chicken</a></li>
+            <li><a href="dessert.html">Rasmalai</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#chef-intro">About</a></li>
+            <li><a href="index.html#featured">All Recipes</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>All Recipes</h4>
-        <ul>
-          <li><a href="pasta.html">Masala Pasta</a></li>
-          <li><a href="biryani.html">Royal Awadhi Biryani</a></li>
-          <li><a href="manchurian.html">Manchurian</a></li>
-          <li><a href="butterChicken.html">Butter Chicken</a></li>
-          <li><a href="dessert.html">Rasmalai</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#chef-intro">About</a></li>
-          <li><a href="index.html#featured">All Recipes</a></li>
-        </ul>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Signature Recipes. All rights reserved.</p>
+        <p class="footer-tagline">"Cook bold. Eat better."</p>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Signature Recipes. All rights reserved.</p>
-      <p class="footer-tagline">"Cook bold. Eat better."</p>
-    </div>
-  </div>
-</footer>
+  </footer>
 
-<script>
-  (function() {
-    var toggle = document.getElementById('navToggle');
-    var links  = document.getElementById('navLinks');
-    if (!toggle || !links) return;
-    toggle.addEventListener('click', function() {
-      var isOpen = links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', isOpen);
-    });
-  })();
-</script>
+  <script>
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var links  = document.getElementById('navLinks');
+      if (!toggle || !links) return;
+      toggle.addEventListener('click', function() {
+        var isOpen = links.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', isOpen);
+      });
+    })();
+  </script>
 
 </body>
 </html>
