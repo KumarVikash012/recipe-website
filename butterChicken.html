@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Classic Butter Chicken — creamy tomato-based Indian curry, rich and flavorful." />
+  <title>Butter Chicken — Chef's Signature Recipes</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+  <div class="navbar-inner">
+    <a href="index.html" class="navbar-brand">
+      <span class="brand-title">Chef's Signature Recipes</span>
+    </a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pasta.html">Pasta</a></li>
+      <li><a href="biryani.html">Biryani</a></li>
+      <li><a href="manchurian.html">Manchurian</a></li>
+      <li><a href="butterChicken.html" class="active">Butter Chicken</a></li>
+      <li><a href="dessert.html">Dessert</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+
+<!-- HERO -->
+<section class="recipe-hero">
+  <div class="recipe-hero-bg"
+    style="background-image: url('images/butterchicken.png');">
+  </div>
+  <div class="recipe-hero-overlay"></div>
+
+  <div class="recipe-hero-content">
+    <h1>Classic <em>Butter Chicken</em></h1>
+
+    <div class="recipe-badges">
+      <span class="recipe-badge">⏱ 40 mins</span>
+      <span class="recipe-badge">👤 Serves 2</span>
+      <span class="recipe-badge">🌍 Indian</span>
+      <span class="recipe-badge">Medium</span>
+    </div>
+  </div>
+</section>
+
+<!-- BODY -->
+<section class="recipe-body">
+<div class="container">
+<div class="recipe-layout">
+
+<!-- SIDEBAR -->
+<aside class="recipe-sidebar">
+
+<div class="sidebar-card">
+<h3>Quick Info</h3>
+<div class="quick-info">
+<div class="info-row"><span>Prep</span><span>15 min</span></div>
+<div class="info-row"><span>Cook</span><span>25 min</span></div>
+<div class="info-row"><span>Difficulty</span><span>Medium</span></div>
+</div>
+</div>
+
+<div class="sidebar-card">
+<h3>Ingredients</h3>
+<ul class="ingredients-list">
+<li>400g chicken</li>
+<li>1 cup tomato puree</li>
+<li>1/2 cup cream</li>
+<li>1/2 cup yoghurt</li>
+<li>1 tbsp ginger-garlic paste</li>
+<li>2 tsp garam masala</li>
+<li>2 tbsp butter</li>
+<li>Salt</li>
+</ul>
+</div>
+
+</aside>
+
+<!-- MAIN -->
+<div class="recipe-main">
+
+<h2>Simple Butter Chicken</h2>
+
+<p class="recipe-intro">
+A creamy tomato-based Indian curry made with tender chicken and mild spices.
+</p>
+
+<h2>Steps</h2>
+
+<ol class="steps-list">
+
+<li class="step-item">
+<div class="step-number"></div>
+<div class="step-content">
+<h4>Marinate</h4>
+<p>Mix chicken with yoghurt, salt, and spices. Rest 30 mins.</p>
+</div>
+</li>
+
+<li class="step-item">
+<div class="step-number"></div>
+<div class="step-content">
+<h4>Cook Chicken</h4>
+<p>Cook chicken in a pan until lightly browned.</p>
+</div>
+</li>
+
+<li class="step-item">
+<div class="step-number"></div>
+<div class="step-content">
+<h4>Prepare Gravy</h4>
+<p>Heat butter, add tomato puree and cook 5–10 mins.</p>
+</div>
+</li>
+
+<li class="step-item">
+<div class="step-number"></div>
+<div class="step-content">
+<h4>Combine</h4>
+<p>Add chicken and cook together for 10 minutes.</p>
+</div>
+</li>
+
+<li class="step-item">
+<div class="step-number"></div>
+<div class="step-content">
+<h4>Finish</h4>
+<p>Add cream, mix well, and serve hot.</p>
+</div>
+</li>
+
+</ol>
+
+<div class="chefs-tip">
+<div class="tip-label">Chef Tip</div>
+<p>Cook on low heat after adding cream for best flavor.</p>
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-title">Signature Recipes</div>
+        <p>A bold collection of Indian and Indo-Chinese favorites — rich, vibrant, unforgettable.</p>
+      </div>
+      <div class="footer-col">
+        <h4>All Recipes</h4>
+        <ul>
+          <li><a href="pasta.html">Masala Pasta</a></li>
+          <li><a href="biryani.html">Royal Awadhi Biryani</a></li>
+          <li><a href="manchurian.html">Manchurian</a></li>
+          <li><a href="butterChicken.html">Butter Chicken</a></li>
+          <li><a href="dessert.html">Rasmalai</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#chef-intro">About</a></li>
+          <li><a href="index.html#featured">All Recipes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Signature Recipes. All rights reserved.</p>
+      <p class="footer-tagline">"Cook bold. Eat better."</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var toggle = document.getElementById('navToggle');
+    var links  = document.getElementById('navLinks');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', function() {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  })();
+</script>
+
+</body>
+</html>

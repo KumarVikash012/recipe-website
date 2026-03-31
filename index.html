@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chef's Signature Recipes — A luxury culinary experience by Chef Armand Leclair." />
+  <title>Chef's Signature Recipes — Armand Leclair</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar-inner">
+
+      <a href="index.html" class="navbar-brand" aria-label="Chef's Signature Recipes - Home">
+        <span class="brand-title">Chef's Signature Recipes</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="navbar-links" id="navLinks" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="pasta.html">Pasta</a></li>
+        <li><a href="biryani.html">Biryani</a></li>
+        <li><a href="manchurian.html">Manchurian</a></li>
+        <li><a href="butterChicken.html">Butter Chicken</a></li>
+        <li><a href="dessert.html">Dessert</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-bg" role="img" aria-label="Elegant restaurant setting with candlelit table"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+<span>Fresh Recipes • Bold Flavours • Made for Everyone</span>
+</div>
+
+<h1>
+  Cook with
+  <em>Confidence</em>
+</h1>
+
+<p class="hero-desc">
+  From street-style favorites to comforting classics — simple recipes,
+  rich flavors, and food that actually hits. Step in and start cooking.
+</p>
+
+      </div>
+    </section>
+
+
+    <!-- ============================================================
+         FEATURED RECIPES
+    ============================================================ -->
+    <section class="featured-section" id="featured" aria-labelledby="featured-heading">
+      <div class="container">
+
+        <div class="section-header centered">
+          <span class="section-label">The Menu</span>
+          <h2 id="featured-heading">Signature <em>Recipes</em></h2>
+          <p>
+            Each dish a chapter. Each plate a story written in spice, heat, and devotion.
+            Choose your culinary journey below.
+          </p>
+        </div>
+
+        <!-- Search UI (non-functional — decorative) -->
+        <div class="search-bar-ui" role="search" aria-label="Recipe search">
+          <input type="text" placeholder="Search a recipe, ingredient, or cuisine…" aria-label="Search recipes" />
+          <button type="button" aria-label="Submit search">Search</button>
+        </div>
+
+        <!-- Filter Tags -->
+        <div class="filter-tags" role="group" aria-label="Recipe categories">
+          <span class="filter-tag active" tabindex="0">All</span>
+          <span class="filter-tag" tabindex="0">Vegetarian</span>
+          <span class="filter-tag" tabindex="0">Non-Veg</span>
+          <span class="filter-tag" tabindex="0">Desserts</span>
+          <span class="filter-tag" tabindex="0">Quick &amp; Easy</span>
+        </div>
+
+        <!-- Recipe Cards Grid -->
+        <div class="recipes-grid">
+
+
+<article class="recipe-card" aria-labelledby="card-pasta">
+  <div class="card-image">
+    <img
+      src="images/pasta.png"
+      alt="Spicy Indian masala pasta"
+      loading="lazy"
+    />
+    <span class="card-category">Vegetarian</span>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="meta-pill"><span class="dot"></span> 30 mins</span>
+      <span class="meta-pill"><span class="dot"></span> Indian</span>
+    </div>
+    <h3 class="card-title" id="card-pasta">Masala Pasta</h3>
+    <p class="card-desc">
+      Pasta tossed in a spicy onion-tomato masala with capsicum, garlic, and bold Indian flavours.
+    </p>
+    <div class="card-footer">
+      <span class="card-difficulty difficulty-easy">Easy</span>
+      <a href="pasta.html" class="btn btn-gold btn-sm">View Recipe</a>
+    </div>
+  </div>
+</article>
+
+<!-- Card 2: Biryani -->
+<article class="recipe-card" aria-labelledby="card-biryani">
+  <div class="card-image">
+    <img
+      src="images/biryani.png"
+      alt="Awadhi biryani"
+      loading="lazy"
+    />
+    <span class="card-category">Non-Veg</span>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="meta-pill"><span class="dot"></span> 2 hrs</span>
+      <span class="meta-pill"><span class="dot"></span> Indian</span>
+    </div>
+    <h3 class="card-title" id="card-biryani">Royal Awadhi Biryani</h3>
+    <p class="card-desc">
+      Fragrant basmati layered with spiced meat, saffron, and slow-cooked dum richness.
+    </p>
+    <div class="card-footer">
+      <span class="card-difficulty difficulty-hard">Hard</span>
+      <a href="biryani.html" class="btn btn-gold btn-sm">View Recipe</a>
+    </div>
+  </div>
+</article>
+
+<!-- Card 3: Manchurian -->
+<article class="recipe-card" aria-labelledby="card-manchurian">
+  <div class="card-image">
+    <img src="images/manchurian.png" alt="Veg manchurian in gravy" loading="lazy"/>
+    <span class="card-category">Vegetarian</span>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="meta-pill"><span class="dot"></span> 40 mins</span>
+      <span class="meta-pill"><span class="dot"></span> Indo-Chinese</span>
+    </div>
+    <h3 class="card-title" id="card-manchurian">Veg Manchurian</h3>
+    <p class="card-desc">
+      Crispy veggie balls tossed in a spicy, tangy soy-chilli garlic sauce.
+    </p>
+    <div class="card-footer">
+      <span class="card-difficulty difficulty-medium">Medium</span>
+      <a href="manchurian.html" class="btn btn-gold btn-sm">View Recipe</a>
+    </div>
+  </div>
+</article>
+
+<!-- Card 4: Butter Chicken -->
+<article class="recipe-card" aria-labelledby="card-butter">
+  <div class="card-image">
+    <img
+      src="images/butterchicken.png"
+      alt="Butter chicken curry"
+      loading="lazy"
+    />
+    <span class="card-category">Non-Veg</span>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="meta-pill"><span class="dot"></span> 45 mins</span>
+      <span class="meta-pill"><span class="dot"></span> Indian</span>
+    </div>
+    <h3 class="card-title" id="card-butter">Butter Chicken</h3>
+    <p class="card-desc">
+      Tender chicken simmered in a creamy tomato gravy with butter, cream, and spices.
+    </p>
+    <div class="card-footer">
+      <span class="card-difficulty difficulty-medium">Medium</span>
+      <a href="butterChicken.html" class="btn btn-gold btn-sm">View Recipe</a>
+    </div>
+  </div>
+</article>
+
+<!-- Card 5: Dessert -->
+<article class="recipe-card" aria-labelledby="card-dessert">
+  <div class="card-image">
+    <img
+      src="images\rasmalai.png"
+      alt="Rasmalai"
+      loading="lazy"
+    />
+    <span class="card-category">Dessert</span>
+  </div>
+  <div class="card-body">
+    <div class="card-meta">
+      <span class="meta-pill"><span class="dot"></span> 1 hr</span>
+      <span class="meta-pill"><span class="dot"></span> Indian</span>
+    </div>
+    <h3 class="card-title" id="card-dessert">Rasmalai</h3>
+    <p class="card-desc">
+      Soft paneer discs soaked in chilled saffron milk, finished with pistachios.
+    </p>
+    <div class="card-footer">
+      <span class="card-difficulty difficulty-medium">Medium</span>
+      <a href="dessert.html" class="btn btn-gold btn-sm">View Recipe</a>
+    </div>
+  </div>
+</article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         QUOTE BANNER
+    ============================================================ -->
+    <section class="quote-banner" aria-label="Chef's quote">
+      <div class="container">
+        <div class="gold-rule text-center">
+          <span>A word from the kitchen</span>
+        </div>
+        <blockquote>
+          "The finest ingredient in any recipe is patience — and the second finest is love.
+          Everything else is just technique."
+        </blockquote>
+        <cite>— Chef Armand Leclair, 7 Michelin Stars</cite>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-title">Signature Recipes</div>
+        <p>A bold collection of Indian and Indo-Chinese favorites — rich, vibrant, unforgettable.</p>
+      </div>
+      <div class="footer-col">
+        <h4>All Recipes</h4>
+        <ul>
+          <li><a href="pasta.html">Masala Pasta</a></li>
+          <li><a href="biryani.html">Royal Awadhi Biryani</a></li>
+          <li><a href="manchurian.html">Manchurian</a></li>
+          <li><a href="butterChicken.html">Butter Chicken</a></li>
+          <li><a href="dessert.html">Rasmalai</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#chef-intro">About</a></li>
+          <li><a href="index.html#featured">All Recipes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Signature Recipes. All rights reserved.</p>
+      <p class="footer-tagline">"Cook bold. Eat better."</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  (function() {
+    var toggle = document.getElementById('navToggle');
+    var links  = document.getElementById('navLinks');
+    if (!toggle || !links) return;
+    toggle.addEventListener('click', function() {
+      var isOpen = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  })();
+</script>
+
+</body>
+</html>
